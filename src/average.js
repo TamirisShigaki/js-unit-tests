@@ -30,3 +30,6 @@ const average = (array) => {
 };
 
 module.exports = average;
+
+//! Referencia
+/* https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/round */
