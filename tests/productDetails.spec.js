@@ -52,5 +52,12 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(!productDetails('Alcool gel', 'Máscara')).not.toBe(productDetails('Alcool gel', 'Máscara'));
 
     // Teste se os dois productIds terminam com 123.
+    // .slice(-3) pega possições -3 pega as 3 utimas.
+
+    expect(productDetails('Alcool gel','mascara')[0].details.productId.slice(-3)).toBe('123');
+    expect(productDetails('Alcool gel','mascara')[1].details.productId.slice(-3)).toBe('123');
+  
   });
 });
+
+ //! Referencia: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
